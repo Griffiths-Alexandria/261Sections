@@ -8,7 +8,7 @@ function userQuery(){
 
     query_url = "http://api.yelp.com/v2/search/";
     
-    loc = "?location=" + document.getElementById("loc").value;
+    loc = "location=" + document.getElementById("loc").value;
 
     options = document.forms[0];
     txt = "";
@@ -19,7 +19,9 @@ function userQuery(){
             txt+=options[i].value; 
         } 
     }
-   document.getElementById("demo").innerHTML = query_url + loc +txt;
+   values = loc + txt;
+   document.getElementById("demo").innerHTML = values;
+   
 }
 
 

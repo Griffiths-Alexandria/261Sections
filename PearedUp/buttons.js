@@ -19,7 +19,7 @@ function userQuery(){
             txt+=options[i].value; 
         } 
     }
-   document.getElementById("demo").innerHTML = query_url + loc + txt;
+   document.getElementById("demo").innerHTML = query_url + loc +txt;
 }
 
 

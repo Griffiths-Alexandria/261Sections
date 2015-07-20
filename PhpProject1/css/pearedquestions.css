@@ -728,7 +728,7 @@ td, th {
     }
 
     div {
-        text-align: center;     
+        vertical-align: middle;     
         margin: auto;
     }
 
@@ -791,13 +791,14 @@ td, th {
         width: 100%;
 
     
+        /* text-align: center; */
 }
 
     #output {
-        display: inline-grid;
+        display: inline-table;
         margin: auto;
         width: 100%;
-        text-align: center;
+        vertical-align: middle;
     }
 
     .restaurant-img {
@@ -832,17 +833,19 @@ td, th {
     }
 
     .listing-left {
-        float: left;
-        margin-right: 10px;
-        margin-left: 40px;
+        display: block;
+        margin: auto;
+    
         margin-top: 10px;
-        margin-bottom: 10px;
-    }
+        text-align: center;
+        width: 100%;
+}
 
     .listing-right {
         display: block;
 
-        margin-left: 40px;
+        width: 100%;
+        /* margin: auto; */
         text-align: center;
     }
 
@@ -851,8 +854,9 @@ td, th {
     }
 
     tbody {
-        border-color: inherit;
+        display: inline-block;
     
+        vertical-align: middle;
 }
 
 td, th {
